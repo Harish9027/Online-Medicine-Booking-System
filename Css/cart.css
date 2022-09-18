@@ -1,0 +1,100 @@
+.product-container{
+    width: 90%;
+    /* max-width: 650px; */
+    height: 500px;
+    /* justify-content: center;
+    align-items: center; */
+    /* display: flex; */
+    margin: 0 auto;
+    background-color: wheat;
+
+}
+.product-container ion-icon{
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.product-header{
+    width: 100%;
+    /* max-width: 650px; */
+    /* display: inline-flex; */
+    float: left;
+    /* justify-content: flex-start; */
+    padding: 10px;
+    border-bottom: 4px solid lightgray;
+    margin:0 auto;
+}
+.product-title{
+    width: 30%;
+    /* background-color: red; */
+    padding: 10px;
+    float: left;
+    /* width: 50px; */
+    height: 50px;
+    /* margin-bottom: 10px; */
+    border-bottom: 4px solid lightgray;
+}
+.product-title img{
+    width: 50px;
+    height: 50px;
+}
+.price{
+    width:15%;
+    /* display: flex; */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 4px solid lightgray;
+    /* background-color: greenyellow   ; */
+    float: left;
+    /* width: 50px; */
+    height: 50px;
+}
+.quantity{
+    width:35%;
+    /* display: flex; */
+    align-items: center;
+    /* background: #000; */
+    float: left;
+    /* width: 50px; */
+    height: 50px;border-bottom: 4px solid lightgray;
+}
+.total{
+    width:15%;
+    /* display: flex; */
+    align-items: center;
+    border-bottom: 4px solid lightgray;
+    /* background-color: #fff; */
+    float: left;
+    /* width: 50px;  */
+    height: 50px;
+}
+.products{
+    width:100%;
+    display: inline-block;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    padding: 10px 0;
+    border-bottom: 4px solid lightgray;
+}
+
+.basketTotalContainer{
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    width: 100%;
+    padding: 10px 0;
+    float:right;
+}
+.bascketTotalTitle{
+    width: 30%;
+}
+.basketTotal{
+    width: 30%;
+}
+/* .total{
+    float: right;
+    font-size: 35px;
+    color: blue;
+} */

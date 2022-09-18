@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../Css/login.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://use.fontawesome.com/your-embed-code.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <h2> <span>Rx</span> Login Page</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form onsubmit="signUp()"  id="loginForm">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><ion-icon name="logo-facebook"></ion-icon></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" id="name" />
+			<input type="email" placeholder="Email" id="email" />
+			<input type="password" placeholder="Password" id="password" />
+			<button >Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form  id="loginForm">
+			<h1 id="new-head">Sign in</h1>
+			<!-- <span id="error"></span> -->
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input id="email" type="email" placeholder="Email" id="email" />
+			<input id="password" type="password" placeholder="Password" id="password" />
+			<a href="#">Forgot your password?</a>
+			<button onclick="signIn()">Sign In</button>
+		</form>
+	</div>
+	<div  id="signup" class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<!-- <span id="error"></span> -->
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <footer>
+	<p>
+		Created with <i class="fa fa-heart"></i> by
+		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+		- Read how I created this and how you can join the challenge
+		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+	</p>
+</footer> -->
+<script src="../JavaScript/login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- 
+<script src="../JavaScript/analytic.js"></script>
+<script src="../JavaScript/authon.js"></script>
+s
+<script src="../Login/Lode.js"></script>
+<script src="../JavaScript/firebase.js"></script> -->
+<script src="../Login/Lode.js"></script>
+
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+	  apiKey: "AIzaSyCSoTc_IfHVJEZxGNWVKoQWGsYXNSlkxqg",
+	  authDomain: "rx-medix-ba97f.firebaseapp.com",
+	  projectId: "rx-medix-ba97f",
+	  storageBucket: "rx-medix-ba97f.appspot.com",
+	  messagingSenderId: "47850876754",
+	  appId: "1:47850876754:web:6b6f1017a3d01b085b948b",
+	  measurementId: "G-7MJVQDEJ74"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+
+	function signUp(){
+		var email = document.getElementById('email').value
+		var password = document.getElementById('password').value
+
+		firebase.auth().createUserWithEmailAndPassword(email, password)
+		.then((userCredential) => {
+			// Signed in 
+			var user = userCredential.user;
+			// ...
+		})
+		.catch((error) => {
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			// ..
+			alert("ha ho gya");
+		});
+
+
+	}
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+.footer{
+    width: 100%;
+    height: auto;
+    /* background: #000; */
+    background-color: blue;
+    display: block;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin: 0 auto; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+
+}
+
+
+
+
+.faq-container{
+    width: 90%;
+    height: 3000px;
+    margin: 5px auto;
+    /* background-color: blueviolet; */
+    position: relative;
+    /* display: flex; */
+}
+.faq-container h2{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+}
+.faq-container-text-full-container{
+    /* background-color:brown; */
+    width: 85%;
+    height: 1700px;
+    /* position: absolute; */
+    margin-left: 80px;
+    margin-top: 60px;
+
+}
+.faq-container-text-container{
+    /* background-color:red; */
+    width: 100%;
+    margin-top:60px;
+    /* height: 300px;
+    position: absolute;
+    left: 60px; */
+}
+.faq-container-text-container h5{
+    font-size: 30px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.faq-container-text-container p{
+    font-size: 22px;
+    color: lightgray;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#faq-container-text-container-pro{
+    font-size: 23px;
+    color: white;
+}
+#faq-container-text-container-support{
+    font-size: 23px ;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-part-1{
+    /* display: inline-flex; */
+    border-bottom: solid 2px grey;
+    /* margin-bottom: 10px;
+    padding-bottom: 10px; */
+    height: 135px;
+    position: relative;
+    
+    /* background-color: green; */
+}
+.icon{
+    margin-left: 150px;
+    padding-top: 10px;
+}
+.footer-part-1 p{
+    position: absolute;
+    top: 20px;
+    left: 650px;
+    color: gold;
+    width: 600px;
+    text-align: justify;
+}
+.footer-content{
+    width: 800px;
+    margin-left: 300px;
+}
+.footer-part-2{
+    display: flex;
+    border-bottom: solid 2px grey;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.company-link ul li{
+    font-size: 15px;
+    padding: 15px 15px !important;
+}
+.company-link h3{
+    color:goldenrod}
+.company-link a{
+    text-decoration: none;
+    color: white !important;
+    font-size: 17px !important;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.company-link a:hover{
+    color: greenyellow !important; 
+}
+
+.footer-part-2 h3{
+    margin: 20px 100px;
+}
+.footer-part-2 ul{
+    margin: 0 65px;
+}
+.footer-part-2 ul li{
+
+    list-style-type: none;
+    padding: 5px;
+}
+.footer-part-2 ul li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 16.5px;
+
+}
+.social{
+    /* background-color: black; */
+}
+.subscribe{
+    width: 400px;
+    /* background-color: red; */
+    margin-left: -100px;
+}
+.subscribe h5{
+    margin-left: -50px;
+    margin-top:100px ;
+    color: goldenrod;
+}
+.subscribe p{
+    width: 350px;
+    margin-left: -30px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: whitesmoke;
+}
+.subscribe input{
+    margin-left: -30px;
+    width: 300px;
+}
+li{
+    
+}
+.f3{
+    /* background-color: black; */
+}
+.f3 ul{
+    display: inline-flex;
+    list-style-type: none;
+    /* margin: 0 100px; */
+    
+}
+
+.f3 ul li{
+    margin: 0 120px;
+    
+}
+a{
+    text-decoration: none;
+}
+.subscribe{
+    margin-left: 20px;
+
+}
+.f3 p{
+    margin-left: -210px;
+}
+.fot-content{
+    margin: 0 400px;
+}
+
+
+
+
+/* social  */
+
+.footer-new
+{
+    /* background-color: grey; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 900px; */
+
+}
+.footar-links
+{
+    margin-right: 15px;
+    /* display: flex;
+    justify-content:space-between; */
+}
+.footar-links a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+#footar-links-a1{
+    margin-right: 10px;
+
+}
+#footar-pics-a2{
+    margin-left: 10px;
+}
